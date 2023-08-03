@@ -1,0 +1,45 @@
+{
+  "name": "api-freterapido",
+  "version": "1.0.0",
+  "description": "API para desafio de backend da FreteRapido",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "author": "Jean Rabelo <jrabelo75@hotmail.com>",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "dotenv": "^16.3.1",
+    "express": "^4.17.1",
+    "joi": "^17.9.2",
+    "mongoose": "^6.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^29.6.2",
+    "eslint": "^7.32.0",
+    "jest": "^27.3.1",
+    "nodemon": "^3.0.1"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "cjs"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended"
+  }
+}
