@@ -1,4 +1,4 @@
-import CarrierDataUseCase from '../domain/usecases/CarrierDataUseCase.js';
+import CarrierDataUseCase from '../domain/objects/CarrierDataObject.js';
 
 async function processCarrierData(req, res) {
   try {

@@ -1,7 +1,7 @@
 import axios from 'axios';
 import dotenv from 'dotenv';
-import CarrierData from '../CarrierData.js';
-import { ShippingDataUseCase } from './ShippingDataUseCase.js';
+import CarrierData from '../entities/CarrierData.js';
+import { ShippingDataUseCase } from './ShippingDataObject.js';
 import { CarrierDataService } from '../../services/CarrierDataService.js';
 import { CarrierDataValidator } from '../../validators/CarrierDataValidator.js';
 import { ValidationError, ApiError } from '../../middlewares/ErrorMiddleware.js';

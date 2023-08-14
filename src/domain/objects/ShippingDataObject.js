@@ -1,4 +1,4 @@
-import ShippingData from '../ShippingData.js';
+import ShippingData from '../entities/ShippingData.js';
 
 export class ShippingDataUseCase {
   async consumeData(dataToConsume) {
