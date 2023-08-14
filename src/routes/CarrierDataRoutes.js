@@ -1,8 +1,8 @@
 import express from 'express';
-import CarrierDataController from '../controllers/CarrierDataController.js';
+import { processCarrierData } from '../controllers/CarrierDataController.js';
 
 const router = express.Router();
 
-router.post('/api/dados', CarrierDataController.processData);
+router.post('/api/dados', processCarrierData);
 
 export default router;

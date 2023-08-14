@@ -13,7 +13,7 @@ services:
       - .:/usr/src/app
 
   mongodb:
-    image: mongo:4.4
+    image: mongo:latest
     ports:
       - 27017:27017
     volumes:

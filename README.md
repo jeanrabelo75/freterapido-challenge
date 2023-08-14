@@ -1,4 +1,4 @@
-# FreteRapido Challenge
+# Challenge
 
 #### Application Setup
 

@@ -1,6 +1,6 @@
 import CarrierDataRepository from '../repositories/CarrierDataRepository.js';
 
-class CarrierDataService {
+export class CarrierDataService {
   constructor() {
     this.carrierDataRepository = new CarrierDataRepository();
   }
@@ -9,9 +9,7 @@ class CarrierDataService {
     try {
       await this.carrierDataRepository.saveCarrierData(carrierData);
     } catch (error) {
-      throw new Error('Error while processing carrier data: ' + error.message);
+      throw new Error('Error saving carrier data: ' + error.message);
     }
   }
 }
-
-export default CarrierDataService;
